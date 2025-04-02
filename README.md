@@ -28,8 +28,7 @@ Git (to clone the repository)
 Installation
 
 Clone the Repository:
-git clone https://github.com/username/real-time-event-detection-bigdata.git
-cd real-time-event-detection-bigdata
+https://github.com/pujitha242/Real-Time-Event-Detection-Using-Big-Data
 
 Install Dependencies:
 pip install -r requirements.txt
