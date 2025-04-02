@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 700px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #3e8e41;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Event Prediction Form</h1>
+    </header>
+
+    <div class="container">
+        <form method="POST" action="/">
+            <div class="mb-3">
+                <label for="iyear" class="form-label">Year</label>
+                <input type="number" class="form-control" id="iyear" name="iyear" required>
+            </div>
+            <div class="mb-3">
+                <label for="imonth" class="form-label">Month</label>
+                <input type="number" class="form-control" id="imonth" name="imonth" required>
+            </div>
+            <div class="mb-3">
+                <label for="iday" class="form-label">Day</label>
+                <input type="number" class="form-control" id="iday" name="iday" required>
+            </div>
+            <div class="mb-3">
+                <label for="country_txt" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country_txt" name="country_txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="region_txt" class="form-label">Region</label>
+                <input type="text" class="form-control" id="region_txt" name="region_txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="provstate" class="form-label">State</label>
+                <input type="text" class="form-control" id="provstate" name="provstate" required>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="mb-3">
+                <label for="targtype1_txt" class="form-label">Target Type</label>
+                <input type="text" class="form-control" id="targtype1_txt" name="targtype1_txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="natlty1_txt" class="form-label">Nationality</label>
+                <input type="text" class="form-control" id="natlty1_txt" name="natlty1_txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="weaptype1_txt" class="form-label">Weapon Type</label>
+                <input type="text" class="form-control" id="weaptype1_txt" name="weaptype1_txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="nkill" class="form-label">Number of Kills</label>
+                <input type="number" class="form-control" id="nkill" name="nkill" required>
+            </div>
+            <div class="mb-3">
+                <label for="nkillus" class="form-label">US Kills</label>
+                <input type="number" class="form-control" id="nkillus" name="nkillus" required>
+            </div>
+            <div class="mb-3">
+                <label for="nkillter" class="form-label">Terrorist Kills</label>
+                <input type="number" class="form-control" id="nkillter" name="nkillter" required>
+            </div>
+            <div class="mb-3">
+                <label for="nwound" class="form-label">Wounded</label>
+                <input type="number" class="form-control" id="nwound" name="nwound" required>
+            </div>
+            <div class="mb-3">
+                <label for="nwoundus" class="form-label">US Wounded</label>
+                <input type="number" class="form-control" id="nwoundus" name="nwoundus" required>
+            </div>
+            <div class="mb-3">
+                <label for="nwoundte" class="form-label">Terrorist Wounded</label>
+                <input type="number" class="form-control" id="nwoundte" name="nwoundte" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg w-100">Predict</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
