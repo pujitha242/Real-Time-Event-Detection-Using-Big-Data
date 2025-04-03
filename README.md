@@ -30,13 +30,3 @@ Installation
 Clone the Repository:
 https://github.com/pujitha242/Real-Time-Event-Detection-Using-Big-Data
 
-Install Dependencies:
-pip install -r requirements.txt
-
-Set Up Kafka:
-Start Zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
-Start Kafka Server: bin/kafka-server-start.sh config/server.properties
-Create a topic: bin/kafka-topics.sh --create --topic events --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
-Configure Spark:
-Ensure Spark is installed and added to your PATH.
-Update config/spark-config.conf with your cluster settings.
